@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-import sys, subprocess, time, urllib2, socket
-sys.path.append("Adafruit-Raspberry-Pi-Python-Code/Adafruit_CharLCDPlate")
+import sys, os, subprocess, time, urllib2, socket
+sys.path.append(os.path.join(os.path.dirname(__file__), "Adafruit-Raspberry-Pi-Python-Code/Adafruit_CharLCDPlate"))
 from Adafruit_CharLCDPlate import Adafruit_CharLCDPlate
 from PiMinerDisplay import PiMinerDisplay
 
