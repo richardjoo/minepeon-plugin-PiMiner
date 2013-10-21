@@ -9,8 +9,8 @@ echo "$c2 |_| |_| |_|_|_| |_|\___|  __/ \___|\___/|_| |_|"
 echo "$c2                        | |                     "
 echo "$c2                        |_|"
 echo
-echo "This will install the PiMiner LCD plugin for your MinePeon"
-echo "it will require sudo access to install the service and ask"
+echo "This will uninstall the PiMiner LCD plugin for your MinePeon"
+echo "it will require sudo access to remove the service and ask"
 echo "you for your password"
 echo 
 
@@ -19,13 +19,12 @@ echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 
-mkdir -p /opt/minepeon/plugin
-cp -rf PiMiner /opt/minepeon/plugin/
+rm -rf /opt/minepeon/plugin/PiMiner
 
+sudo systemctl disable piminer.service
+sudo systemctl stop piminer.service
 
-sudo cp service/piminer.service /usr/lib/systemd/system/
-sudo systemctl start piminer.service
-sudo systemctl enable piminer.service
+sudo rm -rf /usr/lib/systemd/system/piminer.service
 
 fi
 
