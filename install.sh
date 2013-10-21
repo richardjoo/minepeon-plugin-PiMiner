@@ -14,7 +14,9 @@ echo "it will require sudo access to install the service and ask"
 echo "you for your password"
 echo 
 echo "You will need an Adafruit 16x2 LCD+Keypad Kit for Raspberry Pi"
-echo "avalible from http://www.adafruit.com/"
+echo "avalible from http://www.adafruit.com/. The origional code and"
+echo "libraries are availible from https://github.com/adafruit/PiMiner"
+echo "and https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code"
 
 read -p "Are you sure? [y/n]" -n 1 -r
 echo    # (optional) move to a new line
