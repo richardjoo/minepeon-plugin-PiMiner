@@ -13,6 +13,8 @@ echo "This will install the PiMiner LCD plugin for your MinePeon"
 echo "it will require sudo access to install the service and ask"
 echo "you for your password"
 echo 
+echo "You will need an Adafruit 16x2 LCD+Keypad Kit for Raspberry Pi"
+echo "avalible from http://www.adafruit.com/"
 
 read -p "Are you sure? [y/n]" -n 1 -r
 echo    # (optional) move to a new line
