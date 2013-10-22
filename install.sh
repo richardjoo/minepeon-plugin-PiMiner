@@ -30,7 +30,7 @@ cp -rf PiMiner /opt/minepeon/plugin/
 
 sudo cp service/piminer.service /usr/lib/systemd/system/
 sudo systemctl daemon-reload
-sudo systemctl reload piminer.service
+sudo systemctl start piminer.service
 sudo systemctl enable piminer.service
 
 fi
